@@ -1,0 +1,43 @@
+<h1>Listing furnishings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Dimensions description</th>
+      <th>Img</th>
+      <th>Alter</th>
+      <th>Seats</th>
+      <th>Shape</th>
+      <th>Type</th>
+      <th>Is main</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @furnishings.each do |furnishing| %>
+      <tr>
+        <td><%= furnishing.name %></td>
+        <td><%= furnishing.description %></td>
+        <td><%= furnishing.dimensions_description %></td>
+        <td><%= furnishing.img %></td>
+        <td><%= furnishing.alter %></td>
+        <td><%= furnishing.seats %></td>
+        <td><%= furnishing.shape %></td>
+        <td><%= furnishing.furnishing_type %></td>
+        <td><%= furnishing.is_main %></td>
+        <td><%= link_to 'Show', furnishing %></td>
+        <td><%= link_to 'Edit', edit_furnishing_path(furnishing) %></td>
+        <td><%= link_to 'Destroy', furnishing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Furnishing', new_furnishing_path %>

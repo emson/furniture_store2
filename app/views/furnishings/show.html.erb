@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @furnishing.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @furnishing.description %>
+</p>
+
+<p>
+  <strong>Dimensions description:</strong>
+  <%= @furnishing.dimensions_description %>
+</p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @furnishing.img %>
+</p>
+
+<p>
+  <strong>Alter:</strong>
+  <%= @furnishing.alter %>
+</p>
+
+<p>
+  <strong>Seats:</strong>
+  <%= @furnishing.seats %>
+</p>
+
+<p>
+  <strong>Shape:</strong>
+  <%= @furnishing.shape %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @furnishing.furnishing_type %>
+</p>
+
+<p>
+  <strong>Is main:</strong>
+  <%= @furnishing.is_main %>
+</p>
+
+<%= link_to 'Edit', edit_furnishing_path(@furnishing) %> |
+<%= link_to 'Back', furnishings_path %>

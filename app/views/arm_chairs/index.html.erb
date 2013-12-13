@@ -1,0 +1,40 @@
+<h1>Listing arm_chairs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Dimensions description</th>
+      <th>Img</th>
+      <th>Alter</th>
+      <th>Seats</th>
+      <th>Shape</th>
+      <th>Type</th>
+      <th>Is main</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @arm_chairs.each do |arm_chair| %>
+      <tr>
+        <td><%= arm_chair.name %></td>
+        <td><%= arm_chair.description %></td>
+        <td><%= arm_chair.dimensions_description %></td>
+        <td><%= arm_chair.img %></td>
+        <td><%= arm_chair.alter %></td>
+        <td><%= arm_chair.seats %></td>
+        <td><%= arm_chair.shape %></td>
+        <td><%= arm_chair.furnishing_type %></td>
+        <td><%= arm_chair.is_main %></td>
+        <td><%= link_to 'Show', arm_chair_path(arm_chair) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
