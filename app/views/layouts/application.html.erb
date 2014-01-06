@@ -1,14 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Furniture2</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Balmain and Balmain Traditional Bespoke Furniture</title>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-<%= yield %>
+    <%= yield %>
 
-</body>
+    <footer>
+    <ul>
+      <li><%= link_to("Bespoke furniture", "") %></li>
+      <li><%= link_to("Handmade sofas", "") %></li>
+      <li><%= link_to("Armchairs", "") %></li>
+      <li><%= link_to("Classic furniture", "") %></li>
+      <li><%= link_to("Traditional chairs", "") %></li>
+      <li><%= link_to("Footstools", "") %></li>
+      <li><%= link_to("Custom Upholstery", "") %></li>
+      <li><%= link_to("English furniture", "") %></li>
+      <li><%= link_to("Wingback Armchair", "") %></li>
+      <li><%= link_to("Chesterfield", "") %></li>
+      <li><%= link_to("Queen Anne Chair", "") %></li>
+    </ul>
+    <span>registered in England no. xxxxxx. registered office: Cruses Cottage, Wilton, SN8 3SP<br />(c) 2013 Balmain & Balmain</span>
+    </footer>
+    <div class='social'><a href="" class='fb'>facebook</a><a href='' class='tw'>twitter</a><a href='' class='pi'>pinterest</a></div>
+
+  </body>
 </html>

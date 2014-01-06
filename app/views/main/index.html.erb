@@ -1,9 +1,29 @@
-<h1>Welcome to Balmain &amp; Balmain</h1>
-<nav>
-  <ul>
-    <li><%= link_to('Sofas', sofas_path) %></li>
-    <li><%= link_to('Chairs', chairs_path) %></li>
-    <li><%= link_to('Arm Chairs', arm_chairs_path) %></li>
-  </ul>
-</nav>
+
+<header>
+  <h1>Balmain <span>and</span> Balmain</h1>
+  <h2>Sofas and Chairs</h2>
+  <nav>
+    <ul>
+      <li><%= link_to('Sofas', sofas_path) %></li>
+      <li><%= link_to('Chairs', chairs_path) %></li>
+      <li><%= link_to('Arm Chairs', arm_chairs_path) %></li>
+      <li><%= link_to('About us', arm_chairs_path) %></li>
+      <li><%= link_to('Contact us', arm_chairs_path) %></li>
+    </ul>
+  </nav>
+</header>
+
+<main role="main">
+  <section class="container">
+    <div id="carousel">
+      <%= image_tag("carousel/IMG_1927.jpg") %> />
+      <%= image_tag("carousel/IMG_0261.jpg") %> />
+      <%= image_tag("carousel/IMG_1979.jpg") %> />
+      <%= image_tag("carousel/IMG_2046.jpg") %> />
+      <%= image_tag("carousel/IMG_2071.jpg") %> />
+    </div>
+  </section>
+  <div class='paging'></div>
+  <p class='cta'><span>Call us now:</span> 01672 870 414</p>
+</main>
 
