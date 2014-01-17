@@ -24,7 +24,7 @@ var init = function() {
 		$('body').addClass('ready')
 	}
 	if($I('catimg')){
-		$('#linklist a').on('mouseover',function(e){var imag=$(e.target).data('src');$('#catimg').attr('src','/images/'+imag)})
+		$('#linklist a').on('mouseover',function(e){var imag=$(e.target).data('src');$('#catimg').attr('src',imag)})
 	}
 }
 $(document).ready(function(){init()})			
