@@ -4,14 +4,12 @@
 
 <main role="main">
   <section class="container inpage">
-    <div class='clip'><%= image_tag('IMG_1968.jpg', { id:'catimg', alt:'' }) %></div>
+    <div class='clip'><%= image_tag(@primary_img, { id:'catimg', alt:'' }) %></div>
     <ul id='linklist'>
-      <li><%= link_to('Avon',   '', { :'data-src' => asset_path('IMG_1968.jpg') } ) %></li>
-      <li><%= link_to('Dart',   '', { :'data-src' => asset_path('IMG_2091.jpg') } ) %></li>
-      <li><%= link_to('Frome',  '', { :'data-src' => asset_path('IMG_1979.jpg') } ) %></li>
-      <li><%= link_to('Hamble', '', { :'data-src' => asset_path('IMG_2046.jpg') } ) %></li>
-      <li><%= link_to('Stour',  '', { :'data-src' => asset_path('IMG_2071.jpg') } ) %></li>
-      <li><%= link_to('Wylye',  '', { :'data-src' => asset_path('IMG_2071.jpg') } ) %></li>
+      <% @sofas.each do |sofa| %>
+        <li><%= link_to(sofa.name, sofa_path(sofa), { :'data-src' => asset_path(sofa.img) } ) %></li>
+      <% end %>
+    </ul>
     </div>
   </section>
   <p class='cta'><span>Call us now:</span> 01672 870 414</p>

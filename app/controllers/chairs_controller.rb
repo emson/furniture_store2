@@ -4,7 +4,8 @@ class ChairsController < ApplicationController
   # GET /chairs
   # GET /chairs.json
   def index
-    @chairs = Furnishing.where(furnishing_type:'chair')
+    @chairs = Furnishing.where("furnishing_type = 'chair' and seats = 1").order("shape ASC")
+    @primary_img = @chairs.last.img
   end
 
   # GET /chairs/1

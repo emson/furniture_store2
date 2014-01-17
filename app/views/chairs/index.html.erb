@@ -1,40 +1,17 @@
-<h1>Listing chairs</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Dimensions description</th>
-      <th>Img</th>
-      <th>Alter</th>
-      <th>Seats</th>
-      <th>Shape</th>
-      <th>Type</th>
-      <th>Is main</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @chairs.each do |chair| %>
-      <tr>
-        <td><%= chair.name %></td>
-        <td><%= chair.description %></td>
-        <td><%= chair.dimensions_description %></td>
-        <td><%= chair.img %></td>
-        <td><%= chair.alter %></td>
-        <td><%= chair.seats %></td>
-        <td><%= chair.shape %></td>
-        <td><%= chair.furnishing_type %></td>
-        <td><%= chair.is_main %></td>
-        <td><%= link_to 'Show', chair_path(chair) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= render('shared/header') %>
 
-<br>
+<main role="main">
+  <section class="container inpage">
+    <div class='clip'><%= image_tag(@primary_img, { id:'catimg', alt:'' }) %></div>
+    <ul id='linklist'>
+      <% @chairs.each do |chair| %>
+        <li><%= link_to(chair.name, chair_path(chair), { :'data-src' => asset_path(chair.img) } ) %></li>
+      <% end %>
+    </div>
+  </section>
+  <p class='cta'><span>Call us now:</span> 01672 870 414</p>
+</main>
+
 

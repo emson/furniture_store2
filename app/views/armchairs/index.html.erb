@@ -1,0 +1,17 @@
+
+
+<%= render('shared/header') %>
+
+<main role="main">
+  <section class="container inpage">
+    <div class='clip'><%= image_tag(@primary_img, { id:'catimg', alt:'' }) %></div>
+    <ul id='linklist'>
+      <% @armchairs.each do |armchair| %>
+        <li><%= link_to(armchair.name, armchair_path(armchair), { :'data-src' => asset_path(armchair.img) } ) %></li>
+      <% end %>
+    </div>
+  </section>
+  <p class='cta'><span>Call us now:</span> 01672 870 414</p>
+</main>
+
+

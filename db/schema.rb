@@ -14,14 +14,12 @@
 ActiveRecord::Schema.define(version: 20131210090058) do
 
   create_table "furnishings", force: true do |t|
+    t.string   "furnishing_type"
     t.string   "name"
     t.text     "description"
-    t.text     "dimensions_description"
-    t.string   "img"
-    t.string   "alter"
+    t.string   "imgs"
     t.float    "seats"
     t.string   "shape"
-    t.string   "furnishing_type"
     t.boolean  "is_main"
     t.datetime "created_at"
     t.datetime "updated_at"
