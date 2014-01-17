@@ -23,6 +23,9 @@ var init = function() {
 		$('.container').on('mouseout',function(){callDoRotate=setInterval( function(){doRotate()}, 3000)})     
 		$('body').addClass('ready')
 	}
+	if($I('catimg')){
+		$('#linklist a').on('mouseover',function(e){var imag=$(e.target).data('src');$('#catimg').attr('src','/images/'+imag)})
+	}
 }
 $(document).ready(function(){init()})			
-$(window).bind('resizeEnd', function() {cs.modify()});
+$(window).bind('resizeEnd', function() {if($I('carousel')){cs.modify()}});

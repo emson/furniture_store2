@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require zepto.min
 //= require turbolinks
+//= require zepto.min
 //= require utils
 //= require carousel

@@ -1,40 +1,20 @@
-<h1>Listing sofas</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Dimensions description</th>
-      <th>Img</th>
-      <th>Alter</th>
-      <th>Seats</th>
-      <th>Shape</th>
-      <th>Type</th>
-      <th>Is main</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @sofas.each do |sofa| %>
-      <tr>
-        <td><%= sofa.name %></td>
-        <td><%= sofa.description %></td>
-        <td><%= sofa.dimensions_description %></td>
-        <td><%= sofa.img %></td>
-        <td><%= sofa.alter %></td>
-        <td><%= sofa.seats %></td>
-        <td><%= sofa.shape %></td>
-        <td><%= sofa.furnishing_type %></td>
-        <td><%= sofa.is_main %></td>
-        <td><%= link_to 'Show', sofa_path(sofa) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= render('shared/header') %>
 
-<br>
+<main role="main">
+  <section class="container inpage">
+    <div class='clip'><%= image_tag('IMG_1968.jpg', { id:'catimg', alt:'' }) %></div>
+    <ul id='linklist'>
+      <li><%= link_to('Avon',   '', { :'data-src' => asset_path('IMG_1968.jpg') } ) %></li>
+      <li><%= link_to('Dart',   '', { :'data-src' => asset_path('IMG_2091.jpg') } ) %></li>
+      <li><%= link_to('Frome',  '', { :'data-src' => asset_path('IMG_1979.jpg') } ) %></li>
+      <li><%= link_to('Hamble', '', { :'data-src' => asset_path('IMG_2046.jpg') } ) %></li>
+      <li><%= link_to('Stour',  '', { :'data-src' => asset_path('IMG_2071.jpg') } ) %></li>
+      <li><%= link_to('Wylye',  '', { :'data-src' => asset_path('IMG_2071.jpg') } ) %></li>
+    </div>
+  </section>
+  <p class='cta'><span>Call us now:</span> 01672 870 414</p>
+</main>
+
 
