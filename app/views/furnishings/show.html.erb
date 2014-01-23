@@ -1,6 +1,21 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Furnishing Type:</strong>
+  <%= @furnishing.furnishing_type %>
+</p>
+
+<p>
+  <strong>Shape:</strong>
+  <%= @furnishing.shape %>
+</p>
+
+<p>
+  <strong>Seats:</strong>
+  <%= @furnishing.seats %>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @furnishing.name %>
 </p>
@@ -11,28 +26,33 @@
 </p>
 
 <p>
-  <strong>Imgs</strong>
-  <%= @furnishing.imgs %>
+  <strong>Image main</strong>
+  <%= @furnishing.image_main %>
 </p>
 
 <p>
-  <strong>Img:</strong>
-  <%= @furnishing.img %>
+  <strong>Image rollover</strong>
+  <%= @furnishing.image_rollover %>
 </p>
 
 <p>
-  <strong>Seats:</strong>
-  <%= @furnishing.seats %>
+  <strong>Image dimensions</strong>
+  <%= @furnishing.image_dimensions %>
 </p>
 
 <p>
-  <strong>Shape:</strong>
-  <%= @furnishing.shape %>
+  <strong>Image other</strong>
+  <%= @furnishing.image_other %>
 </p>
 
 <p>
-  <strong>Furnishing Type:</strong>
-  <%= @furnishing.furnishing_type %>
+  <strong>Back:</strong>
+  <%= @furnishing.back %>
+</p>
+
+<p>
+  <strong>Seat:</strong>
+  <%= @furnishing.seat %>
 </p>
 
 <p>
@@ -42,3 +62,4 @@
 
 <%= link_to 'Edit', edit_furnishing_path(@furnishing) %> |
 <%= link_to 'Back', furnishings_path %>
+

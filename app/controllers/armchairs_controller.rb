@@ -5,7 +5,7 @@ class ArmchairsController < ApplicationController
   # GET /armchairs.json
   def index
     @armchairs = Furnishing.where("furnishing_type = 'armchair' and seats = 1").order("shape ASC")
-    @primary_img = @armchairs.last.img
+    @primary_img = @armchairs.first.image_rollover
   end
 
   # GET /armchairs/1
@@ -23,7 +23,7 @@ class ArmchairsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def furnishing_params
-    params.require(:furnishing).permit(:name, :description, :dimensions_description, :img, :alter, :seats, :shape, :furnishing_type, :is_main)
+    params.require(:furnishing).permit(Furnishing.permitted)
   end
 
 end

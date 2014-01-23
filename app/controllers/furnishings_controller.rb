@@ -62,13 +62,15 @@ class FurnishingsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_furnishing
-      @furnishing = Furnishing.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def furnishing_params
-      params.require(:furnishing).permit(:name, :description, :dimensions_description, :img, :alter, :seats, :shape, :furnishing_type, :is_main)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_furnishing
+    @furnishing = Furnishing.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def furnishing_params
+    params.require(:furnishing).permit(Furnishing.permitted)
+  end
+
 end

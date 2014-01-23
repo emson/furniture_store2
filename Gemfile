@@ -12,10 +12,14 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'rails_12factor', group: :production
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'carrierwave'
+gem 'fog'
+gem 'figaro'
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do

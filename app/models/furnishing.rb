@@ -1,8 +1,13 @@
 class Furnishing < ActiveRecord::Base
 
-  def img
-    return "missing-image.jpg" if self.imgs.nil?
-    self.imgs.split(',').first
+  mount_uploader :image_main, ImagesUploader
+  mount_uploader :image_rollover, ImagesUploader
+  mount_uploader :image_dimensions, ImagesUploader
+  mount_uploader :image_other, ImagesUploader
+
+  def self.permitted
+    ignore = %w{ id created_at updated_at }
+    @permitted ||= self.attribute_names.map { |name| name.to_sym unless ignore.include?(name) }.compact
   end
 
 end

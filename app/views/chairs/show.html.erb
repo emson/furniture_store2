@@ -1,6 +1,21 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Furnishing Type:</strong>
+  <%= @chair.furnishing_type %>
+</p>
+
+<p>
+  <strong>Shape:</strong>
+  <%= @chair.shape %>
+</p>
+
+<p>
+  <strong>Seats:</strong>
+  <%= @chair.seats %>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @chair.name %>
 </p>
@@ -11,28 +26,33 @@
 </p>
 
 <p>
-  <strong>Imgs</strong>
-  <%= @chair.imgs %>
+  <strong>Image main</strong>
+  <%= @chair.image_main %>
 </p>
 
 <p>
-  <strong>Img:</strong>
-  <%= @chair.img %>
+  <strong>Image rollover</strong>
+  <%= @chair.image_rollover %>
 </p>
 
 <p>
-  <strong>Seats:</strong>
-  <%= @chair.seats %>
+  <strong>Image dimensions</strong>
+  <%= @chair.image_dimensions %>
 </p>
 
 <p>
-  <strong>Shape:</strong>
-  <%= @chair.shape %>
+  <strong>Image other</strong>
+  <%= @chair.image_other %>
 </p>
 
 <p>
-  <strong>Furnishing Type:</strong>
-  <%= @chair.furnishing_type %>
+  <strong>Back:</strong>
+  <%= @chair.back %>
+</p>
+
+<p>
+  <strong>Seat:</strong>
+  <%= @chair.seat %>
 </p>
 
 <p>
@@ -41,3 +61,4 @@
 </p>
 
 <%= link_to 'Back', chairs_path %>
+

@@ -48,7 +48,7 @@ main{text-align:center}
       overflow:hidden;
 
     }
-.inpage{height:auto;padding-bottom:0;text-align:left;margin-top:20px}
+.inpage{height:auto;padding-bottom:0;text-align:left;margin-top:20px;line-height:1.6em}
 
     #carousel {
       width: 100%;
@@ -112,10 +112,17 @@ footer a{text-decoration:none;color:#b0b0ba;}
 .paging span:hover, span.current {background:#6b6b81}
 
 
-.social{position:absolute;top:10px;right:10px}
+.social{position:absolute;top:10px;right:150px}
 .social a{width:25px;height:25px;display:block;float:left;background:url(image-path("social.png")) no-repeat;text-indent:100px;overflow:hidden;background-size:cover;margin-right:8px}
 .social .tw{background-position:50% 50%}
 .social .pi{background-position:100% 50%}
+dl{float:left;width:40%;font-size:0.9em}
+dt{font-weight:bold;float:left;clear:left}
+dd{float:left}
+
+.wizard{width: 100%;margin:2em auto}
+.wizard img{width:100%;padding-top:1em}
+.wizard:before{content:'';width:90%;margin:0 auto;display:block;height:1px;background:-webkit-linear-gradient(left,rgba(255,255,255,0) 0%,#b9b9ca 20%,#b9b9ca 80%,rgba(255,255,255,0) 100%);background:linear-gradient(left,rgba(255,255,255,0) 0%,#b9b9ca 20%,#b9b9ca 80%,rgba(255,255,255,0) 100%);}
 
 @media screen and (min-width: 1201px){/*big screen*/
 	main{margin:0 20%}
@@ -137,13 +144,13 @@ footer a{text-decoration:none;color:#b0b0ba;}
 
 }
 @media screen and (max-width: 480px){/*phone landscape 480*/
-	nav a{padding:0 5px;font-size:0.7em}.inpage ul{font-size:0.6em}.inpage li{margin-bottom:1.1em}header{padding-top:20px}
+	nav a{padding:0 5px;font-size:0.7em}.inpage ul{font-size:0.6em}.inpage li{margin-bottom:1.1em}header{padding-top:20px}dl{width:100%}
 
 }
 @media screen and (max-width: 320px){/*phone portrait 320*/
 	nav ul,nav li{float:none}nav ul{border-bottom:1px solid #efefe0;left:0;padding:0;margin:0 0 10px}nav li{border-top:1px solid #efefe0;right:0}nav li a{padding:10px !important;text-align:center}}
 
 
-
+.social span{opacity:0}
 
 

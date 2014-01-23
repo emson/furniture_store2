@@ -3,12 +3,17 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Imgs</th>
+      <th>Furnishing Type</th>
       <th>Seats</th>
       <th>Shape</th>
-      <th>Furnishing Type</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image main</th>
+      <th>Image rollover</th>
+      <th>Image dimensions</th>
+      <th>Image other</th>
+      <th>Back</th>
+      <th>Seat</th>
       <th>Is main</th>
       <th></th>
       <th></th>
@@ -19,12 +24,17 @@
   <tbody>
     <% @furnishings.each do |furnishing| %>
       <tr>
-        <td><%= furnishing.name %></td>
-        <td><%= furnishing.description %></td>
-        <td><%= furnishing.imgs %></td>
+        <td><%= furnishing.furnishing_type %></td>
         <td><%= furnishing.seats %></td>
         <td><%= furnishing.shape %></td>
-        <td><%= furnishing.furnishing_type %></td>
+        <td><%= furnishing.name %></td>
+        <td><%= furnishing.description %></td>
+        <td><%= furnishing.image_main %></td>
+        <td><%= furnishing.image_rollover %></td>
+        <td><%= furnishing.image_dimensions %></td>
+        <td><%= furnishing.image_other %></td>
+        <td><%= furnishing.back %></td>
+        <td><%= furnishing.seat %></td>
         <td><%= furnishing.is_main %></td>
         <td><%= link_to 'Show', furnishing %></td>
         <td><%= link_to 'Edit', edit_furnishing_path(furnishing) %></td>
