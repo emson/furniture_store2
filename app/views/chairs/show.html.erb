@@ -1,64 +1,25 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Furnishing Type:</strong>
-  <%= @chair.furnishing_type %>
-</p>
+<%= render('shared/header') %>
 
-<p>
-  <strong>Shape:</strong>
-  <%= @chair.shape %>
-</p>
-
-<p>
-  <strong>Seats:</strong>
-  <%= @chair.seats %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @chair.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @chair.description %>
-</p>
-
-<p>
-  <strong>Image main</strong>
-  <%= @chair.image_main %>
-</p>
-
-<p>
-  <strong>Image rollover</strong>
-  <%= @chair.image_rollover %>
-</p>
-
-<p>
-  <strong>Image dimensions</strong>
-  <%= @chair.image_dimensions %>
-</p>
-
-<p>
-  <strong>Image other</strong>
-  <%= @chair.image_other %>
-</p>
-
-<p>
-  <strong>Back:</strong>
-  <%= @chair.back %>
-</p>
-
-<p>
-  <strong>Seat:</strong>
-  <%= @chair.seat %>
-</p>
-
-<p>
-  <strong>Is main:</strong>
-  <%= @chair.is_main %>
-</p>
-
-<%= link_to 'Back', chairs_path %>
+<main role="main">
+  <section class="container inpage">
+    <div class='clip'><%= image_tag(@chair.image_main, { id:'catimg', alt:'' }) %></div>
+    <h2><%= @chair.name %></h2>
+  	<p><%= @chair.description %></p>
+  	<dl>
+  		<dt>Seats</dt>
+  		<dd><%= @chair.seats %></dd>
+  		<dt>Shape</dt>
+  		<dd><%= @chair.shape %></dd>
+  		<dt>Back</dt>
+  		<dd><%= @chair.back %></dd>
+  		<dt>Seat</dt>
+  		<dd><%= @chair.seat %></dd>
+  	</dl>
+  </section>
+  <div class='wizard'>
+  	<%= image_tag(@chair.image_dimensions, { alt:'' }) %>
+  </div>
+	<p class='cta'><span>Call us now:</span> 01672 870 414</p>
+</main>
 
