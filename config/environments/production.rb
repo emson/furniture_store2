@@ -80,7 +80,7 @@ Furniture2::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Add font paths
-  config.assets.paths << Rails.root.join('assets', 'fonts')
-  config.assets.precompile += %w( .svg .eot .woff .ttf )
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  # config.assets.precompile += %w( .svg .eot .woff .ttf )
 
 end
