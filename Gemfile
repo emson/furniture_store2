@@ -16,9 +16,9 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'carrierwave'
 gem 'fog'
 gem 'figaro'
+gem 'pg'
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
