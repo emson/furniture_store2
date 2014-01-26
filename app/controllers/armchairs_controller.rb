@@ -4,7 +4,7 @@ class ArmchairsController < ApplicationController
   # GET /armchairs
   # GET /armchairs.json
   def index
-    @armchairs = Furnishing.where("furnishing_type = 'armchair' and seats = 1").order("shape ASC")
+    @armchairs = Furnishing.where("furnishing_type = 'armchair'").order("shape ASC")
     @primary_img = @armchairs.first.image_rollover
   end
 

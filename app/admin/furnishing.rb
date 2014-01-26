@@ -1,3 +1,4 @@
+
 def default_select(attrib, default)
   return default if furnishing.nil?
   value = furnishing.send(attrib)
