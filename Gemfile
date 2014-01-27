@@ -16,6 +16,8 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'carrierwave'
 gem 'fog'
 gem 'figaro'
+gem 'redcarpet'
+gem 'friendly_id', '~> 5.0.0'
 
 group :production do
   gem 'pg'

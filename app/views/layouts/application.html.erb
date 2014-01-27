@@ -24,9 +24,9 @@
       <li><%= link_to("Chesterfield", "") %></li>
       <li><%= link_to("Queen Anne Chair", "") %></li>
     </ul>
-    <span>registered in England no. xxxxxx. registered office: Cruses Cottage, Wilton, SN8 3SP<br />(c) 2013 Balmain &amp; Balmain</span>
+    <span><%= @profile.company %> <%= @profile.address %><br />(c) 2013 Balmain &amp; Balmain</span>
     </footer>
-    <div class='social'><a href="" class='fb'>facebook</a><a href='' class='tw'>twitter</a><a href='' class='pi'>pinterest</a></div>
+    <div class='social'><a href="<%= @profile.facebook %>" class='fb'>facebook</a><a href='<%= @profile.twitter %>' class='tw'>twitter</a><a href='<%= @profile.pintrest %>' class='pi'>pinterest</a></div>
 
   </body>
 </html>

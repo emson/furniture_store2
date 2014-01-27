@@ -1,6 +1,4 @@
-class Page < ActiveRecord::Base
-  extend FriendlyId
-  friendly_id :title, use: :slugged
+class Profile < ActiveRecord::Base
 
   def self.permitted
     ignore = %w{ id created_at updated_at }

@@ -1,14 +1,12 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @page.title %>
-</p>
+<%= render('shared/header') %>
 
-<p>
-  <strong>Content:</strong>
-  <%= @page.content %>
-</p>
+<main role="main">
+  <section class="container inpage">
+    <h2><%= @page.title %></h2>
+    <%= raw(convert_to_markdown(@page.content)) %>
+  </section>
 
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+  <%= render('shared/call_us') %>
+</main>
+

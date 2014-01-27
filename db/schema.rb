@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140118140848) do
+ActiveRecord::Schema.define(version: 20140127213523) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -59,6 +59,30 @@ ActiveRecord::Schema.define(version: 20140118140848) do
     t.string   "back"
     t.string   "seat"
     t.boolean  "is_main"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pages", force: true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "pages", ["slug"], name: "index_pages_on_slug", unique: true
+
+  create_table "profiles", force: true do |t|
+    t.string   "full_name"
+    t.string   "phone"
+    t.string   "email_main"
+    t.string   "email_general"
+    t.text     "address"
+    t.text     "company"
+    t.string   "facebook"
+    t.string   "twitter"
+    t.string   "pintrest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
