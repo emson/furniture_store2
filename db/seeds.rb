@@ -155,7 +155,7 @@ is_main: false
 Furnishing.create({
 furnishing_type: "armchair",
 shape: "avon",
-seats: ,
+seats: 1.0,
 name: "Avon",
 description: "The Avon is an elegant chair keeping the beautiful curves at the base, arms and back.",
 back: "",
