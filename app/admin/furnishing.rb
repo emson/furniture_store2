@@ -36,6 +36,7 @@ ActiveAdmin.register Furnishing do
   # end
   show do |furnishing|
     attributes_table do
+      row :id
       row :furnishing_type
       row :shape
       row :seats
@@ -49,6 +50,8 @@ ActiveAdmin.register Furnishing do
       row :image_other
       row :tag_list
       row :is_main
+      row :created_at
+      row :updated_at
   end
 end
 
