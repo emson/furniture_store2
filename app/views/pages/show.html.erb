@@ -1,10 +1,12 @@
 
-<%= render('shared/header') %>
-
 <main role="main">
   <section class="container inpage">
+  <% unless @page.image_side.to_s.empty? %>
+    <div class='clip'><%= image_tag(@page.image_side, { alt:'' }) %></div>
+  <% end %>
     <h2><%= @page.title %></h2>
     <%= raw(convert_to_markdown(@page.content)) %>
+    </div>
   </section>
 
   <%= render('shared/call_us') %>

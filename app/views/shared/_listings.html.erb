@@ -1,13 +1,10 @@
 
-
-<%= render('shared/header') %>
-
 <main role="main">
   <section class="container inpage">
     <div class='clip'><%= image_tag(@primary_img, { id:'catimg', alt:'' }) %></div>
     <ul id='linklist'>
       <% @furnishings.each do |furnishing| %>
-        <li><%= link_to(furnishing.name, path_for(furnishing), { :'data-src' => asset_path(furnishing.image_main) } ) %></li>
+        <li><%= link_to(furnishing.name, path_for(furnishing), { :'data-src' => asset_path(furnishing.image_rollover) } ) %></li>
       <% end %>
     </div>
   </section>

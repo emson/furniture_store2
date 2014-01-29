@@ -13,4 +13,13 @@ module ApplicationHelper
     send(mthd, furnishing)
   end
 
+  def nav_link(text, link)
+    opts = {}
+    opts[:class] = 'active' if current_page?(link)
+    content_tag(:li, opts) do
+      link_to( text, link)
+    end
+  end
+
 end
+

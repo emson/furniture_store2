@@ -30,7 +30,10 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'guard'
-  gem 'guard-rspec'
+  gem 'guard-rspec', require: false
+  gem 'guard-livereload', require: false
+  gem 'rack-livereload'
+  gem 'rb-fsevent', require: false
   gem 'factory_girl_rails'
 end
 

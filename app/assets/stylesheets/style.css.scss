@@ -12,13 +12,15 @@ body{background:#fefeff;color:#9090a9;font:normal 20px/1.4em bonvenocflight,seri
 a{color:#9090a9}
 
 
+strong{font-weight:bold; color:black;}
 
 
 header,main,footer{display:block;margin:0 auto}
 
 
-header h1,header h2{font-weight:normal;font-variant:small-caps;font-size:2em;text-align:center;color:#6b6b81;margin:0.75em 0 0;padding:0}
+header h1,header h2{font-weight:normal;font-variant:small-caps;font-size:2em;text-align:center;color:#6b6b81;margin:0.75em 0 0;padding:0;}
 header h1 span{display:block;font-size:0.3em;line-height:2em;margin-bottom:-0.5em}
+header h1 a:hover, header h1 a:active, header h1 a:focus, header h2 a:hover, header h2 a:active, header h2 a:focus{color:#9090a9;text-decoration:none;}
 header h2{font-variant:normal;font-size:0.75em;font-style:italic;margin-bottom:1.5em;}
 header h2:before{content:'';width:6em;margin:0 auto;display:block;height:1px;background:-webkit-linear-gradient(left,rgba(255,255,255,0) 0%,#b9b9ca 20%,#b9b9ca 80%,rgba(255,255,255,0) 100%);background:linear-gradient(left,rgba(255,255,255,0) 0%,#b9b9ca 20%,#b9b9ca 80%,rgba(255,255,255,0) 100%);}
 
@@ -26,6 +28,7 @@ nav{overflow:hidden}
 nav ul{padding:0 0 1em;margin:0;font-size:1em;position:relative;float:left;left:50%;font-variant: small-caps}
 nav li{position:relative;float:left;right:50%;list-style:none;}
 nav a{text-decoration:none;padding:0 40px}
+nav li.active a{text-decoration:underline;color:#6b6b81;}
 nav li:first-child a{padding-left:0}
 nav li:last-child a{padding-right:0}
 a{text-decoration:none}

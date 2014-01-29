@@ -1,13 +1,13 @@
 <header>
-  <h1>Balmain <span>and</span> Balmain</h1>
+<h1><%= link_to(raw("Balmain <span>and</span> Balmain"), root_path) %></h1>
   <h2>Sofas and Chairs</h2>
   <nav>
     <ul>
-      <li><%= link_to('Sofas', sofas_path) %></li>
-      <li><%= link_to('Chairs', chairs_path) %></li>
-      <li><%= link_to('Armchairs', armchairs_path) %></li>
-      <li><%= link_to('About us', page_path('about-us')) %></li>
-      <li><%= link_to('Contact us', page_path('contact-us')) %></li>
+      <%= nav_link('sofas', sofas_path) %>
+      <%= nav_link('chairs', chairs_path) %>
+      <%= nav_link('armchairs', armchairs_path) %>
+      <%= nav_link('about us', page_path('about-us')) %>
+      <%= nav_link('contact us', page_path('contact-us')) %>
     </ul>
   </nav>
 </header>

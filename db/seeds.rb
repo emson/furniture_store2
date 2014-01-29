@@ -18,14 +18,25 @@ Page.create({
   title: "About us",
   content: "Sarah and Andrew Balmain established Balmain & Balmain in 1987. A family-owned company, they design and manufacture classic furniture, combining traditional methods with the most up to date technology to achieve the highest standards.
 
-  Their daughter Henrietta took on the running of the company at the beginning of 2014. Henrietta has worked for the company for a number of years and is now looking to breath new and exciting life into the company. Having worked for a number of years in a design team at Colefax & Fowler and other design houses she is very much looking forward to the challenge and is at the end of the phone waiting for your questions. Plus with over 20 yearsʼ experience in the furniture business, Henrietta hope to continue to make choosing their unique bespoke furniture, a stress-free and enjoyable experience.
+Their daughter Henrietta took on the running of the company at the beginning of 2014. Henrietta has worked for the company for a number of years and is now looking to breath new and exciting life into the company. Having worked for a number of years in a design team at Colefax & Fowler and other design houses she is very much looking forward to the challenge and is at the end of the phone waiting for your questions. Plus with over 20 yearsʼ experience in the furniture business, Henrietta hope to continue to make choosing their unique bespoke furniture, a stress-free and enjoyable experience.
 
-  Henrietta takes enormous pleasure in inviting people to her home set in the pictureque village of Wilton on the Berkshire/Wiltshire borders. It is an ideal relaxed setting in which to view their bespoke sofas, chairs and footstools."
+Henrietta takes enormous pleasure in inviting people to her home set in the pictureque village of Wilton on the Berkshire/Wiltshire borders. It is an ideal relaxed setting in which to view their bespoke sofas, chairs and footstools."
 })
 
 Page.create({
   title: "Contact us",
-  content: "TODO: Add contact form"
+  content: "Please contact us for more information and to make a quote, we would be delighted to hear from you.
+**Please Note: We are not a mail order company, we make bespoke handmade furniture.**
+
+Henrietta Gillespie  
+Cruses Cottage  
+Wilton  
+UK  
+SN8 3SP  
+
+01672 870 414
+
+[mail@balmainandbalmain.com](mailto:mail@balmainandbalmain.com)"
 })
 
 # === Furnishings === #
@@ -50,6 +61,7 @@ name: "Avon",
 description: "The Avon has been designed as a beautifully elegant sofa with curved lines at the base, arms and back.",
 back: "",
 seat: "",
+tag_list: 'Classic furniture',
 is_main: false
 })
 
@@ -61,6 +73,7 @@ name: "Frome",
 description: "The Frome — the archetypal sofa. If you were asked to design your perfect sofa, it would be this comfortable.",
 back: "",
 seat: "",
+tag_list: 'Classic furniture, Comfy sofa',
 is_main: false
 })
 
@@ -180,17 +193,6 @@ shape: "dart",
 seats: 2.0,
 name: "Dart",
 description: "The Dart is designed those who need a neater, more compact style of furniture in their setting.",
-back: "",
-seat: "",
-is_main: false
-})
-
-Furnishing.create({
-furnishing_type: "armchair",
-shape: "avon",
-seats: 1.0,
-name: "Avon",
-description: "The Avon is an elegant chair keeping the beautiful curves at the base, arms and back.",
 back: "",
 seat: "",
 is_main: false

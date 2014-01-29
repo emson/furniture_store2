@@ -1,6 +1,7 @@
 class Page < ActiveRecord::Base
   extend FriendlyId
   friendly_id :title, use: :slugged
+  mount_uploader :image_side, ImagesUploader
 
   def self.permitted
     ignore = %w{ id created_at updated_at }
