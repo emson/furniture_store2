@@ -4,8 +4,8 @@ class ChairsController < ApplicationController
   # GET /chairs
   # GET /chairs.json
   def index
-    @chairs = Furnishing.where("furnishing_type = 'chair'").order("shape ASC")
-    @primary_img = @chairs.first.image_rollover
+    @furnishings = Furnishing.where("furnishing_type = 'chair'").order("shape ASC")
+    @primary_img = @furnishings.first.image_rollover
   end
 
   # GET /chairs/1
@@ -18,7 +18,7 @@ class ChairsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_furnishing
-    @chair = Furnishing.find(params[:id])
+    @furnishing = Furnishing.find(params[:id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.

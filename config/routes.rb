@@ -1,14 +1,17 @@
 Furniture2::Application.routes.draw do
 
-  resources :pages
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
+  resources :pages
   resources :furnishings
   resources :sofas,      only: [:index, :show]
   resources :chairs,     only: [:index, :show]
-  resources :armchairs, only: [:index, :show]
+  resources :armchairs,  only: [:index, :show]
+
+  # get 'tags/:id' => 'tags#index'
+  resources :tags, only: [:show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

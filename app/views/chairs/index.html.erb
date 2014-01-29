@@ -1,18 +1,2 @@
-
-
-<%= render('shared/header') %>
-
-<main role="main">
-  <section class="container inpage">
-    <div class='clip'><%= image_tag(@primary_img, { id:'catimg', alt:'' }) %></div>
-    <ul id='linklist'>
-      <% @chairs.each do |chair| %>
-        <li><%= link_to(chair.name, chair_path(chair), { :'data-src' => asset_path(chair.image_main) } ) %></li>
-      <% end %>
-    </div>
-  </section>
-
-  <%= render('shared/call_us') %>
-</main>
-
+<%= render('shared/listings') %>
 

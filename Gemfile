@@ -18,6 +18,7 @@ gem 'fog'
 gem 'figaro'
 gem 'redcarpet'
 gem 'friendly_id', '~> 5.0.0'
+gem 'acts-as-taggable-on'
 
 group :production do
   gem 'pg'
@@ -26,6 +27,7 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'pry-rails'
   gem 'rspec-rails'
   gem 'guard'
   gem 'guard-rspec'

@@ -1,5 +1,7 @@
 class Furnishing < ActiveRecord::Base
 
+  acts_as_taggable
+
   validates_presence_of :name, :description, :furnishing_type, :shape, :seats
 
   mount_uploader :image_main, ImagesUploader

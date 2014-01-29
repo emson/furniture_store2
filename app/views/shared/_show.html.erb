@@ -1,0 +1,26 @@
+
+<%= render('shared/header') %>
+
+<main role="main">
+  <section class="container inpage">
+    <div class='clip'><%= image_tag(@furnishing.image_main, { id:'catimg', alt:'' }) %></div>
+    <h2><%= @furnishing.name %></h2>
+  	<p><%= @furnishing.description %></p>
+  	<dl>
+  		<dt>Seats</dt>
+  		<dd><%= @furnishing.seats %></dd>
+  		<dt>Shape</dt>
+  		<dd><%= @furnishing.shape %></dd>
+  		<dt>Back</dt>
+  		<dd><%= @furnishing.back %></dd>
+  		<dt>Seat</dt>
+  		<dd><%= @furnishing.seat %></dd>
+  	</dl>
+  </section>
+  <div class='wizard'>
+  	<%= image_tag(@furnishing.image_dimensions, { alt:'' }) %>
+  </div>
+
+  <%= render('shared/call_us') %>
+</main>
+

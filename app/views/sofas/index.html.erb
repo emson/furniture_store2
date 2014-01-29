@@ -1,19 +1,2 @@
-
-
-<%= render('shared/header') %>
-
-<main role="main">
-  <section class="container inpage">
-    <div class='clip'><%= image_tag(@primary_img, { id:'catimg', alt:'' }) %></div>
-    <ul id='linklist'>
-      <% @sofas.each do |sofa| %>
-        <li><%= link_to(sofa.name, sofa_path(sofa), { :'data-src' => asset_path(sofa.image_rollover) } ) %></li>
-      <% end %>
-    </ul>
-    </div>
-  </section>
-
-  <%= render('shared/call_us') %>
-</main>
-
+<%= render('shared/listings') %>
 

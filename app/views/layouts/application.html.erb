@@ -12,18 +12,11 @@
 
     <footer>
     <ul>
-      <li><%= link_to("Bespoke furniture", "") %></li>
-      <li><%= link_to("Handmade sofas", "") %></li>
-      <li><%= link_to("Armchairs", "") %></li>
-      <li><%= link_to("Classic furniture", "") %></li>
-      <li><%= link_to("Traditional chairs", "") %></li>
-      <li><%= link_to("Footstools", "") %></li>
-      <li><%= link_to("Custom Upholstery", "") %></li>
-      <li><%= link_to("English furniture", "") %></li>
-      <li><%= link_to("Wingback Armchair", "") %></li>
-      <li><%= link_to("Chesterfield", "") %></li>
-      <li><%= link_to("Queen Anne Chair", "") %></li>
+      <% list_tags.each do |atag| %>
+      <li><%= link_to(atag.name, tag_path(atag)) %></li>
+      <% end %>
     </ul>
+
     <span><%= @profile.company %> <%= @profile.address %><br />(c) 2013 Balmain &amp; Balmain</span>
     </footer>
     <div class='social'><a href="<%= @profile.facebook %>" class='fb'>facebook</a><a href='<%= @profile.twitter %>' class='tw'>twitter</a><a href='<%= @profile.pintrest %>' class='pi'>pinterest</a></div>

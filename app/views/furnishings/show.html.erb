@@ -1,65 +1,26 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Furnishing Type:</strong>
-  <%= @furnishing.furnishing_type %>
-</p>
+<%= render('shared/header') %>
 
-<p>
-  <strong>Shape:</strong>
-  <%= @furnishing.shape %>
-</p>
+<main role="main">
+  <section class="container inpage">
+    <div class='clip'><%= image_tag(@furnishing.image_main, { id:'catimg', alt:'' }) %></div>
+    <h2><%= @furnishing.name %></h2>
+  	<p><%= @furnishing.description %></p>
+  	<dl>
+  		<dt>Seats</dt>
+  		<dd><%= @furnishing.seats %></dd>
+  		<dt>Shape</dt>
+  		<dd><%= @furnishing.shape %></dd>
+  		<dt>Back</dt>
+  		<dd><%= @furnishing.back %></dd>
+  		<dt>Seat</dt>
+  		<dd><%= @furnishing.seat %></dd>
+  	</dl>
+  </section>
+  <div class='wizard'>
+  	<%= image_tag(@furnishing.image_dimensions, { alt:'' }) %>
+  </div>
 
-<p>
-  <strong>Seats:</strong>
-  <%= @furnishing.seats %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @furnishing.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @furnishing.description %>
-</p>
-
-<p>
-  <strong>Image main</strong>
-  <%= @furnishing.image_main %>
-</p>
-
-<p>
-  <strong>Image rollover</strong>
-  <%= @furnishing.image_rollover %>
-</p>
-
-<p>
-  <strong>Image dimensions</strong>
-  <%= @furnishing.image_dimensions %>
-</p>
-
-<p>
-  <strong>Image other</strong>
-  <%= @furnishing.image_other %>
-</p>
-
-<p>
-  <strong>Back:</strong>
-  <%= @furnishing.back %>
-</p>
-
-<p>
-  <strong>Seat:</strong>
-  <%= @furnishing.seat %>
-</p>
-
-<p>
-  <strong>Is main:</strong>
-  <%= @furnishing.is_main %>
-</p>
-
-<%= link_to 'Edit', edit_furnishing_path(@furnishing) %> |
-<%= link_to 'Back', furnishings_path %>
+  <%= render('shared/call_us') %>
+</main>
 
