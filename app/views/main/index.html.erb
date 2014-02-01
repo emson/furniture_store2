@@ -1,15 +1,15 @@
 
 <main role="main">
   <section class="container">
-    <div id="carousel">
-      <%= image_tag("carousel/IMG_1927.jpg", alt:'') %>
-      <%= image_tag("carousel/IMG_0261.jpg", alt:'') %>
-      <%= image_tag("carousel/IMG_1979.jpg", alt:'') %>
-      <%= image_tag("carousel/IMG_2046.jpg", alt:'') %>
-      <%= image_tag("carousel/IMG_2071.jpg", alt:'') %>
+    <div class="owl-carousel">
+      <div><%= image_tag("carousel/IMG_0261.jpg", alt:'') %></div>
+      <div><%= image_tag("carousel/IMG_1927.jpg", alt:'') %></div>
+      <div><%= image_tag("carousel/IMG_1979.jpg", alt:'') %></div>
+      <div><%= image_tag("carousel/IMG_2046.jpg", alt:'') %></div>
+      <div><%= image_tag("carousel/IMG_2071.jpg", alt:'') %></div>
     </div>
   </section>
-  <div class='paging'></div>
-  <p class='cta'><span>Call us now:</span> 01672 870 414</p>
+
+  <%= render('shared/call_us') %>
 </main>
 
