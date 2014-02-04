@@ -41,170 +41,228 @@ SN8 3SP
 
 # === Furnishings === #
 
+# Furnishing.all.each do |f| puts "\nFurnising.create({\n  furnishing_type: \"#{f.furnishing_type}\",\n  shape: \"#{f.shape}\",\n  seats: #{f.seats},\n  name: \"#{f.name}\",\n  description: \"#{f.description}\",\n  back: \"#{f.back}\",\n  seat: \"#{f.seat}\",\n  image_main: \"#{f.image_main}\",\n  image_rollover: \"#{f.image_rollover}\",\n  image_dimensions: \"#{f.image_dimensions}\",\n  image_other: \"#{f.image_other}\",\n  is_main: #{f.is_main}\n})\n\n" end;nil
 
-Furnishing.create({
-furnishing_type: "chair",
-shape: "arun",
-seats: 1.0,
-name: "Arun",
-description: "The Arun is a versatile high-backed chair with flat-fronted arms.",
-back: "",
-seat: "",
-is_main: false
+Furnising.create({
+  furnishing_type: "chair",
+  shape: "arun",
+  seats: 1.0,
+  name: "Arun",
+  description: "The Arun is a versatile high-backed chair with flat-fronted arms.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/IMG_1993.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/IMG_1984.jpg",
+  image_dimensions: "https://balmain-web.s3.amazonaws.com/furnishing/dl-web.dropbox.com_.webloc",
+  image_other: "",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "sofa",
-shape: "avon",
-seats: 2.0,
-name: "Avon",
-description: "The Avon has been designed as a beautifully elegant sofa with curved lines at the base, arms and back.",
-back: "",
-seat: "",
-tag_list: 'Classic furniture',
-is_main: false
+
+Furnising.create({
+  furnishing_type: "sofa",
+  shape: "avon",
+  seats: 2.5,
+  name: "Avon",
+  description: "The Avon is an elegant chair keeping the beautiful curves at the base, arms and back.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/avon-sofa-web.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/avon-sofa-web.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/avon-sofa-detail-web.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "sofa",
-shape: "frome",
-seats: 2.0,
-name: "Frome",
-description: "The Frome — the archetypal sofa. If you were asked to design your perfect sofa, it would be this comfortable.",
-back: "",
-seat: "",
-tag_list: 'Classic furniture, Comfy sofa',
-is_main: false
+
+Furnising.create({
+  furnishing_type: "sofa",
+  shape: "dart",
+  seats: 2.0,
+  name: "Dart",
+  description: "The Dart is designed those who need a neater, more compact style of furniture in their setting.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7874.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7885.jpg",
+  image_dimensions: "",
+  image_other: "",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "chair",
-shape: "lambourn",
-seats: 1.0,
-name: "Lambourn",
-description: "The Lambourn is our chair for all occasion and spaces. It is neat and tidy and adaptable to any situation.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "armchair",
+  shape: "wylye",
+  seats: 1.0,
+  name: "Wylye",
+  description: "This big and sumptuous chair is not a space saver but perfect for curling up in on your own.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7780.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7780.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7783.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "chair",
-shape: "otter",
-seats: 1.0,
-name: "Otter",
-description: "The Otter is our interpretation of the classic wing back chair. Its large wings and cutback scroll arms wouldn't look out of place in the club.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "armchair",
+  shape: "avon",
+  seats: 1.0,
+  name: "Avon",
+  description: "The Avon is an elegant chair keeping the beautiful curves at the base, arms and back.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7739.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7751.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7760.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "chair",
-shape: "parrett",
-seats: 1.0,
-name: "Parrett",
-description: "The Parrett was designed to be a bit different to the typical tub chair. Square and angular, with crisp straight lines, it is out of this world to sit in.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "armchair",
+  shape: "frome",
+  seats: 1.0,
+  name: "Frome",
+  description: "The Frome is the archetypal chair. If you were asked to design your perfect chair, it would be this comfortable.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7850.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7843.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7850.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "armchair",
-shape: "stour",
-seats: 1.0,
-name: "Stour",
-description: "The Stour is arguably our most classic design and, with its curved back and low rollover arms, one of our most popular styles.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "armchair",
+  shape: "dart",
+  seats: 1.0,
+  name: "Dart",
+  description: "The Dart is designed those who need a neater, more compact style of furniture in their setting.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/IMG_2097.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7885.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7887.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "sofa",
-shape: "wylye",
-seats: 2.5,
-name: "Wylye",
-description: "The Wylye. Big and sumptuous in all ways, this is the sofa to cosy up in with friends.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "sofa",
+  shape: "hamble",
+  seats: 2.5,
+  name: "Hamble",
+  description: "The Hamble is a large, elegant piece with a luxurious scatter cushion back — Curl up and read a book or settle down on a wet day to watch the afternoon movie.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/IMG_1932.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7711.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7714.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "sofa",
-shape: "hamble",
-seats: 2.5,
-name: "Hamble",
-description: "The Hamble is a large, elegant piece with a luxurious scatter cushion back — Curl up and read a book or settle down on a wet day to watch the afternoon movie.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "sofa",
+  shape: "wylye",
+  seats: 2.5,
+  name: "Wylye",
+  description: "The Wylye. Big and sumptuous in all ways, this is the sofa to cosy up in with friends.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7766.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7788.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7774.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "chair",
-shape: "",
-seats: 1.0,
-name: "Brook",
-description: "The Brook is a classically well-proportioned wing chair.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "chair",
+  shape: "parrett",
+  seats: 1.0,
+  name: "Parrett",
+  description: "The Parrett was designed to be a bit different to the typical tub chair. Square and angular, with crisp straight lines, it is out of this world to sit in.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/IMG_2018.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7806.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7805.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "armchair",
-shape: "dart",
-seats: 1.0,
-name: "Dart",
-description: "The Dart is designed those who need a neater, more compact style of furniture in their setting.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "armchair",
+  shape: "stour",
+  seats: 1.0,
+  name: "Stour",
+  description: "The Stour is arguably our most classic design and, with its curved back and low rollover arms, one of our most popular styles.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/IMG_2003.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7798.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7796.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "armchair",
-shape: "avon",
-seats: 1.0,
-name: "Avon",
-description: "The Avon is an elegant chair keeping the beautiful curves at the base, arms and back.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "chair",
+  shape: "otter",
+  seats: 1.0,
+  name: "Otter",
+  description: "The Otter is our interpretation of the classic wing back chair. Its large wings and cutback scroll arms wouldn't look out of place in the club.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/IMG_1942.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7721.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7725.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "armchair",
-shape: "frome",
-seats: 1.0,
-name: "Frome",
-description: "The Frome is the archetypal chair. If you were asked to design your perfect chair, it would be this comfortable.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "chair",
+  shape: "lambourn",
+  seats: 1.0,
+  name: "Lambourn",
+  description: "The Lambourn is our chair for all occasion and spaces. It is neat and tidy and adaptable to any situation.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/IMG_2031.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7811.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7817.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "sofa",
-shape: "dart",
-seats: 2.0,
-name: "Dart",
-description: "The Dart is designed those who need a neater, more compact style of furniture in their setting.",
-back: "",
-seat: "",
-is_main: false
+
+Furnising.create({
+  furnishing_type: "sofa",
+  shape: "frome",
+  seats: 2.0,
+  name: "Frome",
+  description: "The Frome — the archetypal sofa. If you were asked to design your perfect sofa, it would be this comfortable.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7850.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7844.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7844.jpg",
+  is_main: false
 })
 
-Furnishing.create({
-furnishing_type: "armchair",
-shape: "wylye",
-seats: 1.0,
-name: "Wylye",
-description: "This big and sumptuous chair is not a space saver but perfect for curling up in on your own.",
-back: "",
-seat: "",
-is_main: false
-})
