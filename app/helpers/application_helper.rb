@@ -15,10 +15,19 @@ module ApplicationHelper
 
   def nav_link(text, link)
     opts = {}
-    opts[:class] = 'active' if current_page?(link)
+    opts[:class] = 'active' if current_first_path == link || current_page?(link)
     content_tag(:li, opts) do
       link_to( text, link)
     end
+  end
+
+  def parse_current_uri
+    URI.parse(request.original_url)
+  end
+
+  # create path:   /sofas  from  /sofas/2
+  def current_first_path
+    "/#{parse_current_uri.path.split('/')[1]}"
   end
 
 end
