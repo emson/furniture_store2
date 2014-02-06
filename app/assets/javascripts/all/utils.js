@@ -11,12 +11,12 @@ $(document).on('ready page:load', function() {
     singleItem:true,
     autoPlay: 5000,
     slideSpeed : 2000,
-    pagination: true,
+    // pagination: true,
     paginationSpeed : 3000,
     transitionStyle: false,
     itemsScaleUp: true,
     // stopOnHover: true,
-    navigation: true, // Show next and prev buttons
+    // navigation: true, // Show next and prev buttons
   });
 
 

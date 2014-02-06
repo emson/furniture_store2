@@ -1,12 +1,8 @@
 
 header,main,footer{width: 960px;margin:0 auto}
 
-// header h1 {
-//   width: 316px; height: 268px; background: url(image-path("balmainlogo.jpg"));
-//   text-indent: -9999px;
-//   text-align:center;
-// }
+.social a{width:264px; height: 68px;display:block;float:left;background:url(image-path("social-ie.png")) no-repeat;text-indent:100px;overflow:hidden;background-size:cover;margin-right:8px}
+.social .fb{width:25px; height:25px; background-position:0px 0px}
+.social .tw{width:25px; height:25px; background-position:-36px 0px}
+.social .pi{width:25px; height:25px; background-position:-72px 0px}
 
-.social a{width:25px;height:25px;display:block;float:left;background:url(image-path("social-ie.png")) no-repeat;text-indent:100px;overflow:hidden;background-size:cover;margin-right:8px}
-.social .tw{background-position:50% 50%}
-.social .pi{background-position:100% 50%}
