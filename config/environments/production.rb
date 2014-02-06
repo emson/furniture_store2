@@ -82,5 +82,7 @@ Furniture2::Application.configure do
   # Add font paths
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   config.assets.precompile += %w( .svg .eot .woff .ttf )
+  config.assets.precompile += %w( application-all.css.scss application-ie.css.scss )
+  config.assets.precompile += %w( application-all.js application-ie.js )
 
 end
