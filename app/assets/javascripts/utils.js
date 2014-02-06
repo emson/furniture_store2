@@ -11,7 +11,7 @@
 
 // $( document ).ready(function() { alert("Hello, world!") });
 
-$(document).ready(function() {
+$(document).on('ready page:load', function() {
 
   $(".owl-carousel").owlCarousel({
     singleItem:true,
@@ -26,29 +26,32 @@ $(document).ready(function() {
   });
 
 
-  // BEE.test();
-  // console.log(BEE.handleRollover(BEE.rolloverLinks()));
+  // preload images
+  var preloads = BEE.selectDataSrc($("#linklist li a"));
+  $(preloads).each(function(){
+    if($('')[0] === undefined) {
+      return;
+    }
+    $('')[0].src = this;
+  });
+
+  // get the data src from the link and swap it with #catimg
+  $("#linklist li a").on('mouseover',function() {
+    var imgSrc = $(this).data('src');
+    // console.log(imgSrc);
+    $('#catimg').attr('src', imgSrc);
+  });
 
 });
 
 var BEE = (function($) {
 
-    function privateTest() {
-      console.log("Hello World");
-    }
-
-    function privateRolloverLinks() {
-      return $("#linklist li a");
-    }
-
-    function privateHandleRollover(links) {
-      return links.each(function() { console.log($(this).data('src'));});
+    function privateSelectDataSrc(links) {
+      return links.each(function() { $(this).data('src');});
     }
 
     return {
-      test: privateTest,
-      rolloverLinks: privateRolloverLinks,
-      handleRollover: privateHandleRollover,
+      selectDataSrc: privateSelectDataSrc,
     };
 
 })(jQuery);

@@ -41,9 +41,9 @@ SN8 3SP
 
 # === Furnishings === #
 
-# Furnishing.all.each do |f| puts "\nFurnising.create({\n  furnishing_type: \"#{f.furnishing_type}\",\n  shape: \"#{f.shape}\",\n  seats: #{f.seats},\n  name: \"#{f.name}\",\n  description: \"#{f.description}\",\n  back: \"#{f.back}\",\n  seat: \"#{f.seat}\",\n  image_main: \"#{f.image_main}\",\n  image_rollover: \"#{f.image_rollover}\",\n  image_dimensions: \"#{f.image_dimensions}\",\n  image_other: \"#{f.image_other}\",\n  is_main: #{f.is_main}\n})\n\n" end;nil
+# Furnishing.all.each do |f| puts "\nFurnishing.create({\n  furnishing_type: \"#{f.furnishing_type}\",\n  shape: \"#{f.shape}\",\n  seats: #{f.seats},\n  name: \"#{f.name}\",\n  description: \"#{f.description}\",\n  back: \"#{f.back}\",\n  seat: \"#{f.seat}\",\n  image_main: \"#{f.image_main}\",\n  image_rollover: \"#{f.image_rollover}\",\n  image_dimensions: \"#{f.image_dimensions}\",\n  image_other: \"#{f.image_other}\",\n  is_main: #{f.is_main}\n})\n\n" end;nil
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "chair",
   shape: "arun",
   seats: 1.0,
@@ -59,7 +59,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "sofa",
   shape: "avon",
   seats: 2.5,
@@ -75,7 +75,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "sofa",
   shape: "dart",
   seats: 2.0,
@@ -91,7 +91,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "armchair",
   shape: "wylye",
   seats: 1.0,
@@ -107,7 +107,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "armchair",
   shape: "avon",
   seats: 1.0,
@@ -123,7 +123,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "armchair",
   shape: "frome",
   seats: 1.0,
@@ -139,7 +139,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "armchair",
   shape: "dart",
   seats: 1.0,
@@ -155,7 +155,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "sofa",
   shape: "hamble",
   seats: 2.5,
@@ -171,7 +171,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "sofa",
   shape: "wylye",
   seats: 2.5,
@@ -187,7 +187,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "chair",
   shape: "parrett",
   seats: 1.0,
@@ -203,7 +203,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "armchair",
   shape: "stour",
   seats: 1.0,
@@ -219,7 +219,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "chair",
   shape: "otter",
   seats: 1.0,
@@ -235,7 +235,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "chair",
   shape: "lambourn",
   seats: 1.0,
@@ -251,7 +251,7 @@ Furnising.create({
 })
 
 
-Furnising.create({
+Furnishing.create({
   furnishing_type: "sofa",
   shape: "frome",
   seats: 2.0,
