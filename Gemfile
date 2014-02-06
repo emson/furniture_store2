@@ -21,6 +21,7 @@ gem 'friendly_id', '~> 5.0.0'
 gem 'acts-as-taggable-on'
 gem 'owlcarousel-rails'
 gem 'unicorn'
+gem 'modernizr-rails'
 
 group :production do
   gem 'pg'

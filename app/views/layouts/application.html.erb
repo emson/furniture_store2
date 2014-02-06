@@ -1,10 +1,13 @@
 <!doctype html>
-<html>
+<html class='no-js'>
   <head>
     <title>Balmain and Balmain Traditional Bespoke Furniture</title>
     <%= stylesheet_link_tag "application-all", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application-all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag :modernizr %>
     <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= javascript_include_tag "application-all", "data-turbolinks-track" => true %>
     <!--[if lte IE 8]>
       <%= stylesheet_link_tag "application-ie", media: "all" %>
       <%= javascript_include_tag "application-ie" %>
@@ -13,8 +16,6 @@
       <%= stylesheet_link_tag "application-ie", media: "all" %>
       <%= javascript_include_tag "application-ie" %>
     <![endif]-->
-  </head>
-  <body>
 
     <%= render('shared/header') %>
     <%= yield %>
