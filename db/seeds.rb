@@ -7,6 +7,7 @@ Profile.create({
   email_general: "mail@balmainandbalmain.com",
   address: "Cruses Cottage, Wilton, SN8 3SP",
   company: "registered in England no. xxxxxx. registered office:",
+  copyright: "(c) Copyright 2014 Balmain and Balmain Ltd.",
   facebook: "https://facebook.com/henrietta.gillespie",
   twitter: "https://twitter.com/BalmainSofa",
   pintrest: "http://www.pinterest.com/balmainsofa/"

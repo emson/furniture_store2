@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140129205755) do
+ActiveRecord::Schema.define(version: 20140206110015) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -86,6 +86,7 @@ ActiveRecord::Schema.define(version: 20140129205755) do
     t.string   "pintrest"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "copyright"
   end
 
   create_table "taggings", force: true do |t|
