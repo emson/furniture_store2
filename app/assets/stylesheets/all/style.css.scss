@@ -37,10 +37,14 @@ main{text-align:center}
 .cta span{font-size:0.5em}
 
 .imgLandscapeThmb {
-  width: 360px;
+  width: 44%;
   height: auto;
   float: right;
-  v-align: bottom;
+}
+
+.stretch {
+  width:100%;
+  height: auto;
 }
 
 .container {
