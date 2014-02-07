@@ -11,6 +11,7 @@ $(document).on('ready page:load', function() {
     singleItem:true,
     autoPlay: 5000,
     slideSpeed : 2000,
+    rewindSpeed : 4000,
     // pagination: true,
     paginationSpeed : 3000,
     transitionStyle: false,
