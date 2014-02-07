@@ -21,13 +21,13 @@
     <%= yield %>
 
     <footer>
+    <br/>
+    <br/>
     <ul>
       <% list_tags.each do |atag| %>
       <li><%= link_to(atag.name, tag_path(atag)) %></li>
       <% end %>
     </ul>
-    <br/>
-    <br/>
     <span><%= @profile.company %> <%= @profile.address %><br /><%= @profile.copyright %></span>
     </footer>
 
