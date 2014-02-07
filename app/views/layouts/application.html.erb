@@ -26,9 +26,11 @@
       <li><%= link_to(atag.name, tag_path(atag)) %></li>
       <% end %>
     </ul>
-
+    <br/>
+    <br/>
     <span><%= @profile.company %> <%= @profile.address %><br /><%= @profile.copyright %></span>
     </footer>
+
     <div class='social'><a href="<%= @profile.facebook %>" class='fb'>facebook</a><a href='<%= @profile.twitter %>' class='tw'>twitter</a><a href='<%= @profile.pintrest %>' class='pi'>pinterest</a></div>
     <div class='socialPhone'><%= @profile.phone %></div>
 
