@@ -4,9 +4,10 @@
     <div class='clip'><%= image_tag(@furnishing.image_rollover, { id:'catimg', alt:'' }) %></div>
     <h2><%= @furnishing.name %></h2>
   	<p><%= @furnishing.description %></p>
+    <div class='imgLandscapeThmb'><%= image_tag(@furnishing.image_main, { alt:'', class:'imgLandscapeThmb' }) %></div>
   </section>
   <section class="container inpage">
-    <%= image_tag(@furnishing.image_main, { alt:'' }) %>
+    <%= image_tag(@furnishing.image_other, { alt:'' }) %>
   </section>
   <div class='wizard'>
   	<%= image_tag(@furnishing.image_dimensions, { alt:'' }) %>

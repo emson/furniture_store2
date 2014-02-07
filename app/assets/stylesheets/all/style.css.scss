@@ -36,10 +36,12 @@ main{text-align:center}
 .cta{font-size:1.333em;clear:both;padding:2em 0 0}
 .cta span{font-size:0.5em}
 
-
-
-
-
+.imgLandscapeThmb {
+  width: 360px;
+  height: auto;
+  float: right;
+  v-align: bottom;
+}
 
 .container {
   width: 100%;
@@ -73,6 +75,7 @@ footer a{text-decoration:none;color:#b0b0ba;}
 .social a{width:25px;height:25px;display:block;float:left;background:url(image-path("social.png")) no-repeat;text-indent:100px;overflow:hidden;background-size:cover;margin-right:8px}
 .social .tw{background-position:50% 50%}
 .social .pi{background-position:100% 50%}
+.social span{opacity:0}
 dl{float:left;width:40%;font-size:0.9em}
 dt{font-weight:bold;float:left;clear:left}
 dd{float:left}
@@ -108,6 +111,5 @@ dd{float:left}
 nav ul,nav li{float:none}nav ul{border-bottom:1px solid #efefe0;left:0;padding:0;margin:0 0 10px}nav li{border-top:1px solid #efefe0;right:0}nav li a{padding:10px !important;text-align:center}}
 
 
-.social span{opacity:0}
 
 
