@@ -1,8 +1,8 @@
 TODO Furniture:
 - Add testimonials to every page
-	- CRUD testimonials
-		- comment:text
-		- author:string
+	- CRUD testimonials @done(2016-03-07)
+		- comment:text @done(2016-03-07)
+		- author:string @done(2016-03-07)
 		- location:string
 	- Each page shows a random testimonial
 	- Update ActiveAdmin menu

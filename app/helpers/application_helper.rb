@@ -30,5 +30,16 @@ module ApplicationHelper
     "/#{parse_current_uri.path.split('/')[1]}"
   end
 
+  def build_testimonial(model)
+    content_tag_for(:blockquote, model, class: "style1") do
+      content_tag_for(:span, model) do
+        model.comment
+      end << model.author << add_comma_text(model.location)
+    end
+  end
+
+  def add_comma_text(text)
+    ", #{text}" if text && !text.empty?
+  end
 end
 

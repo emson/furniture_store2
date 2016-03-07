@@ -1,8 +1,7 @@
 <% if @testimonials && !@testimonials.empty? %>
 <div class="testimonials">
 <% @testimonials.each do |testimonial| %>
-  <blockquote class="style1"><span><%= testimonial.comment %></span>
-<%= testimonial.author %>, <%= testimonial.location %></blockquote>
+  <%= build_testimonial(testimonial) %>
 <% end %>
 </div>
 <% end %>
