@@ -1,0 +1,12 @@
+TODO Furniture:
+- Add testimonials to every page
+	- CRUD testimonials
+		- comment:text
+		- author:string
+		- location:string
+	- Each page shows a random testimonial
+	- Update ActiveAdmin menu
+- Page should have multiple images
+	- "About Sofas" / "Workshop"
+- Add a Mailchimp form to the contact page
+
