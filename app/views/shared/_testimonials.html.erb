@@ -1,2 +1,4 @@
-<p class='cta'><%= @profile.phone %> <br/> <span><%= mail_to @profile.email_general %></span></p>
+<% @testimonials.each do |testimonial| %>
+  <p><%= testimonial.comment %> <%= testimonial.author %> <%= testimonial.location %></p>
+<% end %>
 
