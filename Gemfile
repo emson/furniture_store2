@@ -29,10 +29,13 @@ gem 'owlcarousel-rails'
 gem 'unicorn'
 gem 'modernizr-rails'
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+gem 'pg'
+gem 'rails_12factor'
+
+# group :production do
+#   gem 'pg'
+#   gem 'rails_12factor'
+# end
 
 group :development, :test do
   gem 'sqlite3'
