@@ -7,13 +7,7 @@ class MainController < ApplicationController
   # carousel/IMG_2071.jpg
   def index
     @carousels    = Carousel.order(:order => :asc)
-    @testimonials = select_random(Testimonial, 2)
-  end
-
-  private
-
-  def select_random(model, size=3)
-    model.all.shuffle[1, size]
+    @testimonials = select_random(Testimonial)
   end
 
 end

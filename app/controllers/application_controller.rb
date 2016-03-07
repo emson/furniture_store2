@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
 
   before_action :assign_profile
 
+  include Selectable
+
   private
 
   def assign_profile

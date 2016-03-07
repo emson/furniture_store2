@@ -6,11 +6,13 @@ class ChairsController < ApplicationController
   def index
     @furnishings = Furnishing.where("furnishing_type = 'chair'").order("shape ASC")
     @primary_img = @furnishings.first.image_rollover
+    @testimonials = select_random(Testimonial)
   end
 
   # GET /chairs/1
   # GET /chairs/1.json
   def show
+    @testimonials = select_random(Testimonial)
   end
 
 

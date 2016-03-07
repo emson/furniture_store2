@@ -10,6 +10,7 @@ class FurnishingsController < ApplicationController
   # GET /furnishings/1
   # GET /furnishings/1.json
   def show
+    @testimonials = select_random(Testimonial)
   end
 
   # GET /furnishings/new

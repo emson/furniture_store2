@@ -42,6 +42,32 @@ main{text-align:center}
   float: right;
 }
 
+// .testimonial{font-size:0.5em; color: red}
+// blockquote {font-size:0.7em; font-style:italic; color: red}
+// blockquote span {font-style:normal; color:green}
+.testimonials {clear:both;padding:2em 0 0}
+
+blockquote.style1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 28em;
+  font-size: 0.7em;
+  font-style: normal;
+  // padding: 8px;
+  // margin: 5px;
+  background-image: url(image-path("openquote1.gif"));
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 23px;
+}
+blockquote.style1 span {
+  font-style: italic;
+  display: block;
+  background-image: url(image-path("closequote1.gif"));
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
 .stretch {
   width:100%;
   height: auto;

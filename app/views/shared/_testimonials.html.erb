@@ -1,4 +1,9 @@
+<% if @testimonials && !@testimonials.empty? %>
+<div class="testimonials">
 <% @testimonials.each do |testimonial| %>
-  <p><%= testimonial.comment %> <%= testimonial.author %> <%= testimonial.location %></p>
+  <blockquote class="style1"><span><%= testimonial.comment %></span>
+<%= testimonial.author %>, <%= testimonial.location %></blockquote>
+<% end %>
+</div>
 <% end %>
 
