@@ -5,9 +5,6 @@ ActiveAdmin.register Page do
     def permitted_params
       params.permit!
     end
-    def resource
-      Page.friendly.find(params[:id])
-    end
   end
 
   # custom show page using markdown
