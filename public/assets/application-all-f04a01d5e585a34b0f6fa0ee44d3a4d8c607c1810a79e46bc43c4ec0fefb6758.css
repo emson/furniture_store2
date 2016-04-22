@@ -1,0 +1,644 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+
+ */
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+@font-face {
+  font-family: 'bonvenocflight';
+  src: url(/assets/BonvenoCF-Light-webfont.eot);
+  src: url(/assets/BonvenoCF-Light-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/BonvenoCF-Light-webfont.ttf) format("truetype"), url(/assets/BonvenoCF-Light-webfont.svg#bonvenocflight) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 10, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+body {
+  background: #fefeff;
+  color: #9090a9;
+  font: normal 20px/1.4em bonvenocflight,serif;
+  position: relative;
+}
+
+/* line 12, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+a {
+  color: #9090a9;
+}
+
+/* line 13, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+strong {
+  font-weight: bold;
+  color: black;
+}
+
+/* line 16, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+header, main, footer {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 19, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+header h1, header h2 {
+  font-weight: normal;
+  font-variant: small-caps;
+  font-size: 2em;
+  text-align: center;
+  color: #6b6b81;
+  margin: 0.75em 0 0;
+  padding: 0;
+}
+
+/* line 20, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+header h1 span {
+  display: block;
+  font-size: 0.3em;
+  line-height: 2em;
+  margin-bottom: -0.5em;
+}
+
+/* line 21, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+header h1 a:hover, header h1 a:active, header h1 a:focus, header h2 a:hover, header h2 a:active, header h2 a:focus {
+  color: #9090a9;
+  text-decoration: none;
+}
+
+/* line 22, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+header h2 {
+  font-variant: normal;
+  font-size: 0.75em;
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+
+/* line 23, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+header h2:before {
+  content: '';
+  width: 6em;
+  margin: 0 auto;
+  display: block;
+  height: 1px;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #b9b9ca 20%, #b9b9ca 80%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #b9b9ca 20%, #b9b9ca 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* line 25, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+nav {
+  overflow: hidden;
+}
+
+/* line 26, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+nav ul {
+  padding: 0 0 1em;
+  margin: 0;
+  font-size: 1em;
+  position: relative;
+  float: left;
+  left: 50%;
+  font-variant: small-caps;
+}
+
+/* line 27, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+nav li {
+  position: relative;
+  float: left;
+  right: 50%;
+  list-style: none;
+}
+
+/* line 28, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+nav a {
+  text-decoration: none;
+  padding: 0 40px;
+}
+
+/* line 29, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+nav li.active a {
+  text-decoration: underline;
+  color: #6b6b81;
+}
+
+/* line 30, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+nav li:first-child a {
+  padding-left: 0;
+}
+
+/* line 31, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+nav li:last-child a {
+  padding-right: 0;
+}
+
+/* line 32, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 33, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+  color: #6b6b81;
+}
+
+/* line 35, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+main {
+  text-align: center;
+}
+
+/* line 36, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.cta {
+  font-size: 1.333em;
+  clear: both;
+  padding: 2em 0 0;
+}
+
+/* line 37, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.cta span {
+  font-size: 0.5em;
+}
+
+/* line 39, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.imgLandscapeThmb {
+  width: 44%;
+  height: auto;
+  float: right;
+}
+
+/* line 48, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.testimonials {
+  clear: both;
+  padding: 2em 0 0;
+}
+
+/* line 50, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+blockquote.style1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 28em;
+  font-size: 0.7em;
+  font-style: normal;
+  background-image: url("/assets/openquote1.gif");
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 23px;
+}
+
+/* line 63, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+blockquote.style1 span {
+  font-style: italic;
+  display: block;
+  background-image: url("/assets/closequote1.gif");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+/* line 71, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.stretch {
+  width: 100%;
+  height: auto;
+}
+
+/* line 76, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 66.667%;
+  position: relative;
+  margin: 0 auto 10px;
+  overflow: hidden;
+}
+
+/* line 85, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.inpage {
+  height: auto;
+  padding-bottom: 0;
+  text-align: left;
+  margin-top: 20px;
+  line-height: 1.6em;
+}
+
+/* line 86, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.clip {
+  width: 50%;
+  height: 0;
+  padding-bottom: 75%;
+  float: left;
+  overflow: hidden;
+  margin-right: 40px;
+}
+
+/* line 87, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+#catimg {
+  max-width: 100%;
+}
+
+/* line 88, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.inpage ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.4em;
+}
+
+/* line 89, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.inpage li {
+  margin-bottom: 1.2em;
+}
+
+/* line 92, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+footer {
+  text-align: center;
+}
+
+/* line 93, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+footer ul {
+  margin: 0 7em 1em;
+  padding: 0;
+}
+
+/* line 94, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+footer li, footer span {
+  display: inline-block;
+  color: #b0b0ba;
+  padding: 0 0.5em;
+  font-size: 0.75em;
+}
+
+/* line 95, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+footer a {
+  text-decoration: none;
+  color: #b0b0ba;
+}
+
+/* line 99, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.paging {
+  float: right;
+  margin: 0;
+  font-size: 0.75em;
+}
+
+/* line 100, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.paging span {
+  float: left;
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  background: #b0b0ba;
+  margin: 0 0 0 0.33em;
+  border: 1px solid #9090a9;
+  border-radius: 50%;
+}
+
+/* line 101, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.paging span:hover, span.current {
+  background: #6b6b81;
+}
+
+/* line 104, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.social {
+  position: absolute;
+  top: 10px;
+  right: 150px;
+}
+
+/* line 105, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.social a {
+  width: 25px;
+  height: 25px;
+  display: block;
+  float: left;
+  background: url("/assets/social.png") no-repeat;
+  text-indent: 100px;
+  overflow: hidden;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+/* line 106, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.social .tw {
+  background-position: 50% 50%;
+}
+
+/* line 107, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.social .pi {
+  background-position: 100% 50%;
+}
+
+/* line 108, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.social span {
+  opacity: 0;
+}
+
+/* line 109, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.socialPhone {
+  position: absolute;
+  top: 50px;
+  right: 160px;
+}
+
+/* line 111, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+dl {
+  float: left;
+  width: 40%;
+  font-size: 0.9em;
+}
+
+/* line 112, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+dt {
+  font-weight: bold;
+  float: left;
+  clear: left;
+}
+
+/* line 113, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+dd {
+  float: left;
+}
+
+/* line 115, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.wizard {
+  width: 100%;
+  margin: 2em auto;
+}
+
+/* line 116, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.wizard img {
+  width: 100%;
+  padding-top: 1em;
+}
+
+/* line 117, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+.wizard:before {
+  content: '';
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  height: 1px;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #b9b9ca 20%, #b9b9ca 80%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, #b9b9ca 20%, #b9b9ca 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media screen and (min-width: 1201px) {
+  /*big screen*/
+  /* line 120, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  main {
+    margin: 0 20%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /*mid screen*/
+  /* line 124, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  main {
+    margin: 0 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /*tablet landscape 1024*/
+  /* line 127, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  nav a {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /*tablet portrait 768*/
+  /* line 130, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  main {
+    margin: 0 20px;
+  }
+
+  /* line 131, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  nav a {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /*tablet portrait 768*/
+  /* line 134, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  nav a {
+    padding: 0 10px;
+  }
+
+  /* line 135, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  .inpage ul {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 480px) {
+  /*phone landscape 480*/
+  /* line 139, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  nav a {
+    padding: 0 5px;
+    font-size: 0.7em;
+  }
+
+  /* line 139, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  .inpage ul {
+    font-size: 0.6em;
+  }
+
+  /* line 139, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  .inpage li {
+    margin-bottom: 1.1em;
+  }
+
+  /* line 139, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  header {
+    padding-top: 20px;
+  }
+
+  /* line 139, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  dl {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  /*phone portrait 320*/
+  /* line 143, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  nav ul, nav li {
+    float: none;
+  }
+
+  /* line 143, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  nav ul {
+    border-bottom: 1px solid #efefe0;
+    left: 0;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+
+  /* line 143, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  nav li {
+    border-top: 1px solid #efefe0;
+    right: 0;
+  }
+
+  /* line 143, /Users/emson/Dropbox/devel/rails/furniture2/app/assets/stylesheets/all/style.css.scss */
+  nav li a {
+    padding: 10px !important;
+    text-align: center;
+  }
+}
