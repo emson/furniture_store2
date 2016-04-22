@@ -55,7 +55,7 @@ blockquote.style1 {
   font-style: normal;
   // padding: 8px;
   // margin: 5px;
-  background-image: url(image-path("openquote1.gif"));
+  background-image: url(asset-url("openquote1.gif"));
   background-position: top left;
   background-repeat: no-repeat;
   text-indent: 23px;
@@ -63,7 +63,7 @@ blockquote.style1 {
 blockquote.style1 span {
   font-style: italic;
   display: block;
-  background-image: url(image-path("closequote1.gif"));
+  background-image: url(asset-url("closequote1.gif"));
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -102,7 +102,7 @@ footer a{text-decoration:none;color:#b0b0ba;}
 
 
 .social{position:absolute;top:10px;right:150px}
-.social a{width:25px;height:25px;display:block;float:left;background:url(image-path("social.png")) no-repeat;text-indent:100px;overflow:hidden;background-size:cover;margin-right:8px}
+.social a{width:25px;height:25px;display:block;float:left;background:url(asset-url("social.png")) no-repeat;text-indent:100px;overflow:hidden;background-size:cover;margin-right:8px}
 .social .tw{background-position:50% 50%}
 .social .pi{background-position:100% 50%}
 .social span{opacity:0}
