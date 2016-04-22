@@ -341,7 +341,7 @@ blockquote.style1 {
   width: 28em;
   font-size: 0.7em;
   font-style: normal;
-  background-image: url("/assets/openquote1.gif");
+  background-image: url(url(/assets/openquote1.gif));
   background-position: top left;
   background-repeat: no-repeat;
   text-indent: 23px;
@@ -351,7 +351,7 @@ blockquote.style1 {
 blockquote.style1 span {
   font-style: italic;
   display: block;
-  background-image: url("/assets/closequote1.gif");
+  background-image: url(url(/assets/closequote1.gif));
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -471,7 +471,7 @@ footer a {
   height: 25px;
   display: block;
   float: left;
-  background: url("/assets/social.png") no-repeat;
+  background: url(url(/assets/social.png)) no-repeat;
   text-indent: 100px;
   overflow: hidden;
   background-size: cover;
