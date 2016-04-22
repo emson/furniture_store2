@@ -32,6 +32,11 @@ Things you may want to cover:
 
 * ...
 
+## Compiling Assets
+
+Compiling assets is done by the Heroku server. This only occurs if there is NO
+`public/assets` folder. The SCSS files will need to reference images with
+`image-path` function.
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
