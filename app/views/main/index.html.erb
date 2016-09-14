@@ -3,7 +3,7 @@
   <section class="container">
     <div class="owl-carousel">
       <% @carousels.each do |carousel| %>
-      <div><%= image_tag(carousel.image, alt:carousel.name) %></div>
+        <div><%= image_tag(carousel.image, alt: carousel.name, 'data-pin-no-hover' => true) %></div>
       <% end %>
     </div>
   </section>
