@@ -49,7 +49,7 @@ end
 form do |f|
   f.inputs "Details" do
     f.input :furnishing_type, :as => :select, :collection => options_for_select(%w{armchair chair sofa stool}, default_select(furnishing, :furnishing_type, 'armchair'))
-    f.input :shape, :as => :select, :collection => options_for_select(%w{arun avon dart frome hamble lambourn otter parrett stour stool wylye}, default_select(furnishing, :shape, 'arun'))
+    f.input :shape, :as => :select, :collection => options_for_select(%w{arun avon dart frome hamble kennet lambourn otter parrett stour stool wylye}, default_select(furnishing, :shape, 'arun'))
     f.input :seats, :as => :select, :collection => options_for_select(%w{1.0 2.0 2.5 3.0}, default_select(furnishing, :seats, '1.0'))
     f.input :name
     f.input :description
