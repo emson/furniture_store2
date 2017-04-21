@@ -55,10 +55,10 @@ form do |f|
     f.input :description
     f.input :back
     f.input :seat
-    f.input :image_main
-    f.input :image_rollover
-    f.input :image_dimensions
-    f.input :image_other
+    f.input :image_main, label: 'Image main 700x467'
+    f.input :image_rollover, label: 'Image rollover 467x700'
+    f.input :image_dimensions, label: 'Image dimensions 2214x[Any]'
+    f.input :image_other, label: 'Image other 700x[Any]'
     f.input :tag_list
     f.input :is_main
   end
