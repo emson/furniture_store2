@@ -267,3 +267,35 @@ Furnishing.create({
   is_main: false
 })
 
+
+Furnishing.create({
+  furnishing_type: "stool",
+  shape: "stool",
+  seats: 1.0,
+  name: "My Stool",
+  description: "This is a comfortable stool. You will love the details.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7850.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7844.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7844.jpg",
+  is_main: false
+})
+
+
+Furnishing.create({
+  furnishing_type: "stool",
+  shape: "nadder-cube",
+  seats: 1.0,
+  name: "Nadder Cube",
+  description: "This is a comfortable nadder cube. You will love the details.",
+  back: "",
+  seat: "",
+  image_main: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7850.jpg",
+  image_rollover: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7844.jpg",
+  image_dimensions: "",
+  image_other: "https://balmain-web.s3.amazonaws.com/furnishing/_J4E7844.jpg",
+  is_main: false
+})
+

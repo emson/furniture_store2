@@ -9,6 +9,7 @@ Furniture2::Application.routes.draw do
   resources :sofas,      only: [:index, :show]
   resources :chairs,     only: [:index, :show]
   resources :armchairs,  only: [:index, :show]
+  resources :stools,     only: [:index, :show]
 
   # get 'tags/:id' => 'tags#index'
   resources :tags, only: [:show]
