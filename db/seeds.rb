@@ -10,7 +10,9 @@ Profile.create({
   copyright: "(c) Copyright 2014 Balmain and Balmain",
   facebook: "https://facebook.com/balmainandbalmain",
   twitter: "https://twitter.com/BalmainSofa",
-  pintrest: "http://www.pinterest.com/balmainsofa/"
+  pintrest: "http://www.pinterest.com/balmainsofa/",
+  instagram: "https://www.instagram.com/balmainandbalmain/",
+  house_and_garden: "http://www.houseandgarden.co.uk/the-list/profile/balmain-and-balmain"
 })
 
 # === Pages === #
