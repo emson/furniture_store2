@@ -301,3 +301,8 @@ Furnishing.create({
   is_main: false
 })
 
+
+Testimonial.create(comment: 'Just to say thank you so much for the chairs/settees – I am absolutely delighted. Please convey my thanks and praise to your upholsterers. ', author: 'Gillian H.', location: 'Somerset')
+
+Testimonial.create(comment: 'Just to say a big thank you for the sofas, which are perfect!', author: 'Penny J', location: 'Berkshire')
+

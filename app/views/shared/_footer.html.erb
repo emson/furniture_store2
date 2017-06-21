@@ -1,0 +1,51 @@
+
+
+<section class="widgets">
+  <div class="widgetcol">
+    <div class="widget textwidget">
+      <h3>Contact Info</h3>
+      <address>
+        <span class="phone"><p>
+          <span class="p_contact"> Phone : <%= @profile.phone %></span></p>
+        </span>
+        <span class="email"><p>
+          <span class="p_contact"> E-Mail : <a href="mailto:<%= @profile.email_general %>"><%= @profile.email_general %></a></span></p>
+        </span>
+        <span class="web"><p>
+          <span class="p_contact"> Web : <a href="www.balmainandbalmain.com">www.balmainandbalmain.com</a></span></p>
+        </span>
+
+        <span class="address"><p>
+          <span class="p_contact"><%= @profile.address %></span></p>
+        </span>
+      </address>
+
+    </div>
+  </div>
+  <div class="widgetcol">
+    <div class="widget testimonialswidget">
+      <h3>Testimonials</h3>
+      <%= render :partial => "shared/testimonials" %>
+    </div>
+  </div>
+  </div>
+  <div class="widgetcol">
+    <div class="widget instagramwidget">
+      <h3>Instagram</h3>
+      <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/d306678b96a85c03beb7a6fb4475fb07.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+    </div>
+</section>
+<div class='clearfix' />
+<br />
+<br />
+<span><%= @profile.company %> <%= @profile.address %><br /><%= @profile.copyright %></span>
+<br />
+<br />
+<br />
+
+
+
+
+
+

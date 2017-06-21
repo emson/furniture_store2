@@ -29,13 +29,15 @@
       <li><%= link_to(atag.name, tag_path(atag)) %></li>
       <% end %>
     </ul>
-    <span><%= @profile.company %> <%= @profile.address %><br /><%= @profile.copyright %></span>
+
+
+    <%= render :partial => "shared/footer" %>
     </footer>
 
     <div class='social'>
       <%= link_to 'facebook', @profile.facebook, class: 'fb' %>
       <%= link_to 'twitter',  @profile.twitter,  class: 'tw' %>
-      <%= link_to 'pintrest', @profile.instagram, class: 'in' %>
+      <%= link_to 'instagram', @profile.instagram, class: 'in' %>
       <%= link_to 'thelist',  @profile.house_and_garden, class: 'hg' %>
     </div>
     <div class='socialPhone'><%= @profile.phone %></div>

@@ -94,6 +94,28 @@ footer ul{margin:0 7em 1em;padding:0}
 footer li,footer span{display:inline-block;color:#b0b0ba;padding:0 0.5em;font-size:0.75em}
 footer a{text-decoration:none;color:#b0b0ba;}
 
+.clearfix{ clear: both; }
+.widgets{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60em;
+  padding: 0 10px;
+  clear: both;
+}
+.widgetcol{
+  width: 33%;
+  float: left;
+}
+.widget{
+  padding: 0 30px;
+}
+.textwidget{
+  text-align: left;
+}
+
+.instagramwidget{
+  padding: 0 0 0 30px;
+}
 
 
 .paging {float:right;margin:0;font-size:0.75em}
